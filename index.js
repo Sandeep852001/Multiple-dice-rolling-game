@@ -5,19 +5,18 @@ function rollDice(){
 
     const values=[];
     const images = [];
-
-    for(let i=0;i<numOfDice;i++){
-        const value = Math.floor(Math.random()*6)+1;
-        values.push(value);
-        images.push(`<img src="./${value}.png" alt="dice${value}" width = "150" height = "150">`);
-
+    
+    if(numOfDice>8){
+        for(let i=0;i<numOfDice;i++){
+            const value = Math.floor(Math.random()*6)+1;
+            values.push(value);
+            images.push(`<img src="dice_images/${value}.png" alt="dice${value}" width = "150" height = "150">`);
+        }
+        diceResult.textContent=`dice:${values.join(`,`)}`;
+        diceImages.innerHTML = images.join(` `);
 
     }
-
-    diceResult.textContent=`dice:${values.join(`,`)}`;
-    diceImages.innerHTML = images.join(` `);
-
-
-
-
+    else{
+        diceResult.textContent=`No.Of dice should be less than nine(9)`;
+    }
 }
