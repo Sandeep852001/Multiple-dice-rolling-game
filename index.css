@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(178, 175, 175);
+}
+
+div{
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    /* background-color: rgb(179, 175, 175); */
+    padding-bottom: 20px;
+
+}
+#heading{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+#label{
+    font-size: 25px;
+}
+#ip{
+    padding: 10px 15px;
+    border: none;
+    outline: 0px;
+    border-radius: 10px;
+}
+#button{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 50, 50);
+    cursor: pointer;
+
+}
+#button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: rgb(52, 50, 50);
+}
+#diceValues{
+    margin: 25px;
+    font-size: 30px;
+}
+#diceImages{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
